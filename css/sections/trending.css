@@ -1,0 +1,187 @@
+.trending {
+  overflow: hidden;
+  min-height: 720px;
+  position: relative;
+}
+
+.trending__top,
+.trending__bottom {
+  display: flex;
+  position: relative;
+  height: 50%;
+}
+
+.trending__content {
+  width: 50%;
+  background-color: var(--color-creamson);
+  padding: 90px 40px;
+}
+
+.trending__subtitle {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  color: var(--primary-color);
+}
+
+.trending__title {
+  margin: 40px 0px;
+  font-size: 64px;
+  font-weight: 600;
+  font-family: var(--playfair-display);
+}
+
+.trending__image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  padding: 32px 64px;
+
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.trending__image.sushi5 {
+  background-image: url("../../assets/japanese_sushi.png");
+}
+
+.trending__image.sushi4 {
+  background-image: url("../../assets/japanese_drinks.png");
+}
+
+.trending__description {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--plus-jakarta-sans);
+  color: var(--primary-color);
+}
+
+.trending__list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.trending__list-detail {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  align-items: center;
+}
+
+.trending__list-detail img {
+  color: #fff;
+  padding: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+}
+
+.trending__list-detail p {
+  margin-left: 12px;
+  color: var(--secondary-color);
+  font-size: 18px;
+}
+
+.trending__image div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trending__image-sushi5 {
+  background: url("../../assets/japanese_sushi.png"), #fff;
+}
+
+.trending__image-sushi4 {
+  background: url("../../assets/japanese_drinks.png"), #fff;
+}
+
+.trending__image img {
+  width: 220px;
+  height: 200px;
+  object-fit: contain;
+  padding-right: 20px;
+}
+
+.trending__bottom .trending__image {
+  order: 1;
+}
+
+.trending__bottom .trending__content {
+  order: 2;
+}
+
+.trending__discover {
+  position: absolute;
+  top: 42.5%;
+  left: 44%;
+
+  width: 160px;
+  height: 160px;
+
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 40px 20px;
+  border-radius: 100%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trending__discover p {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.trending__arrow-vertical {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  height: 300px;
+}
+
+.trending__arrow-vertical.reverse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(180deg);
+  z-index: 1;
+  height: 300px;
+}
+
+.trending__arrow-horizontal1 {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 350px;
+}
+
+.trending__arrow-horizontal2 {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%) rotateY(180deg);
+  z-index: 1;
+  width: 350px;
+}
