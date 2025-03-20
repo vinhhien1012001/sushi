@@ -19,6 +19,7 @@
 
 .popular__list {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 40px;
   gap: 30px;
 }
@@ -181,4 +182,13 @@
   height: 14px;
   object-fit: contain;
   margin-left: 21px;
+}
+
+@media screen and (max-width: 550px) {
+  .popular {
+    padding: 20px;
+  }
+  .popular__list {
+    gap: 10px;
+  }
 }

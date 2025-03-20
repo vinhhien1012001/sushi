@@ -7,6 +7,7 @@
 .trending__top,
 .trending__bottom {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   height: 50%;
 }
@@ -185,3 +186,24 @@
   z-index: 1;
   width: 350px;
 }
+
+@media screen and (max-width: 550px) {
+  .trending__image {
+    width: 100%;
+  }
+
+  .trending__arrow-vertical,
+  .trending__arrow-horizontal1,
+  .trending__arrow-horizontal2 {
+    display: none;
+  }
+
+  .trending__content {
+    width: 100%;
+  }
+
+  .trending__bottom .trending__image {
+    order: 2;
+  }
+}
+/* END: trending media queries */

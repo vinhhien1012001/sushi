@@ -67,3 +67,29 @@
   font-size: 18px;
   font-weight: 500;
 }
+
+.subscription__mobile-btn {
+  margin-top: 20px;
+  display: none;
+  min-width: 280px;
+  /* width: 100%; */
+  padding: 15px 40px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 36px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 550px) {
+  .subscription__input-btn {
+    display: none;
+  }
+  .subscription__mobile-btn {
+    display: block;
+  }
+}
